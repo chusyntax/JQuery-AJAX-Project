@@ -7,7 +7,7 @@ $('#searchUser').on('keyup', function(e){
         url:'https://api.github.com/users/'+username,
         data:{
             client_id:'d88a76b43ae87295350e',
-            client_secret:'23d175f5feb94b769284c572668ae0044dc58805'
+            client_secret:'981e4a410ed6e153f4d2577d934cff044d67d579'
 
         }
     }).done(function(user){
@@ -30,7 +30,7 @@ $('#profile').html(`
   <ul class="collection with-header">
   <li class="collection-header"><h5>More Info</h5></li>
   <li class="collection-item avatar">
-    <img src="images/yuna.jpg" alt="" class="circle">
+  <i class="material-icons circle orange">insert_emoticon</i>
     <span class="title">Followers</span>
     <p>
     This user has ${user.followers} followers
@@ -38,7 +38,7 @@ $('#profile').html(`
     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
   </li>
   <li class="collection-item avatar">
-    <i class="material-icons circle">folder</i>
+    <i class="material-icons circle red">location_on</i>
     <span class="title">Location</span>
     <p>
     This user lives in ${user.location}
@@ -46,7 +46,7 @@ $('#profile').html(`
     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
   </li>
   <li class="collection-item avatar">
-    <i class="material-icons circle green">insert_chart</i>
+    <i class="material-icons circle blue">folder</i>
     <span class="title">Public Repos</span>
     <p>
     This user has ${user.public_repos} public repos
@@ -54,8 +54,8 @@ $('#profile').html(`
     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
   </li>
   <li class="collection-item avatar">
-    <i class="material-icons circle red">play_arrow</i>
-    <span class="title">Title</span>
+    <i class="material-icons circle green">play_arrow</i>
+    <span class="title">Start</span>
     <p>
     This user joined GitHub on ${user.created_at}
     </p>
